@@ -37,9 +37,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 65px 0;
-    .wrapper{
+    .wrapper {
       min-width: 50%;
-      &:last-child{
+      &:last-child {
         text-align: right;
       }
     }
@@ -63,11 +63,47 @@ header {
     }
     .phone {
       @include font_phone;
-      p{
-        a{
+      p {
+        a {
           letter-spacing: 1px;
           color: $color_regular;
           text-decoration: none;
+        }
+      }
+    }
+  }
+}
+nav {
+  background-color: $color_regular;
+  .container {
+    .menu {
+      padding: 16px 30px;
+      .list {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        &_item {
+          padding-top: 3px;
+          padding-bottom: 3px;
+          box-sizing: border-box;
+          list-style: none;
+          font-size: 30px;
+          &:not(:last-child) {
+            border-right: 3px solid $color_white;
+            padding-right: 20px;
+          }
+          &:not(:first-child) {
+            padding-left: 20px;
+          }
+          &_link {
+            color: $color_white;
+            text-decoration: none;
+            transition: .2s;
+            &:hover {
+              border-bottom: 3px solid $color_white;
+            }
+          }
         }
       }
     }
