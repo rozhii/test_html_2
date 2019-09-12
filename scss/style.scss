@@ -82,7 +82,8 @@ nav {
         padding: 0;
         margin: 0;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-wrap: wrap;
         &_item {
           padding-top: 3px;
           padding-bottom: 3px;
@@ -107,5 +108,32 @@ nav {
         }
       }
     }
+  }
+}
+.slider {
+  text-align: center;
+  position: relative;
+  &_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0 70px;
+    background-color: #f8f8f8;
+    z-index: -6;
+  }
+  img {
+    width: 1200px;
+    height: 462px;
+    position: relative;
+    bottom: 70px;
+    margin-bottom: -75px;
+    z-index: -1;
+  }
+}
+@media (max-width: 1250px) {
+  .slider{
+    display: none;
   }
 }
