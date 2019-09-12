@@ -6,7 +6,7 @@
   line-height: 22px;
 }
 @mixin font_phone{
-  font-family: "Open Sans-Condensed Light";
+  font-family:"Open Sans-Condensed Light";
   font-size: 40px;
   font-weight: 400;
   line-height: 46px;
@@ -133,7 +133,46 @@ nav {
   }
 }
 @media (max-width: 1250px) {
-  .slider{
+  .slider {
     display: none;
+  }
+}
+.content {
+  margin: 30px 0 200px 0;
+  .container {
+    display: flex;
+    .left {
+      .news {
+        background-color: $color_regular;
+        color: $color_white;
+        text-align: left;
+        padding-left: 30px;
+        padding-right: 55px;
+        padding-bottom: 100px;
+        max-width: 260px;
+        .title {
+          font-weight: 700;
+          font-size: 40px;
+          padding-top: 20px;
+          padding-bottom: 40px;
+        }
+        .description {
+          margin-bottom: 30px;
+          &_title {
+            font-style: italic;
+            letter-spacing: 0.35px;
+          }
+        }
+        .link {
+          text-align: right;
+          a {
+            color: $color_white;
+          }
+        }
+      }
+    }
+    .right {
+
+    }
   }
 }
