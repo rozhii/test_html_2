@@ -32,13 +32,14 @@ p {
 }
 header {
   background-color: $bg_header;
+  width: 100%;
   .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 65px 0;
     .wrapper {
       min-width: 50%;
+      padding: 55px 0;
       &:last-child {
         text-align: right;
       }
@@ -141,6 +142,8 @@ nav {
   margin: 30px 0 200px 0;
   .container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     .left {
       .news {
         background-color: $color_regular;
@@ -172,7 +175,53 @@ nav {
       }
     }
     .right {
+      color: $color_regular;
+      max-width: 570px;
+      margin-left: 60px;
+      .title {
+        font-size: 40px;
+        padding-bottom: 30px;
+      }
+      .description {
+        letter-spacing: 0.38px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+footer {
+  background-color: $color_regular;
+  padding: 50px 0;
+  .container {
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      color: $color_white;
 
+      .link {
+        color: $color_white;
+      }
+      &_nav {
+        .list{
+          margin: 0;
+          line-height: 26px;
+          .item{
+            list-style: none;
+          }
+        }
+      }
+      .right {
+        display: flex;
+        align-items: center;
+        img {
+          width: 36px;
+          height: 38px;
+        }
+        .description {
+          margin-left: 10px;
+        }
+      }
     }
   }
 }
